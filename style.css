@@ -1,0 +1,276 @@
+/*css reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ html{
+     scroll-behavior: smooth;
+ }
+/*Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#logo{
+    margin: 2px 3px;
+
+
+}
+
+#logo img{
+    height: 65px;
+    margin: 3px 4px;
+}
+
+    
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 15px;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 700px ;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../Img/room-gf60380d5f_1920.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+
+#home h1{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 10px;
+}
+
+.h-primary{
+    font-size: 35px;
+    padding: 12px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.h-secondary{
+    font-size: 15px;
+    padding: 12px;
+    
+}
+
+#srch{
+    padding: 3px 15px;
+    background: none;
+    margin: 15px;
+    /* border: 2px solid red; */
+    color: white;
+    border-radius: 12px;
+}
+
+.btn{
+    padding: 6px 12px;
+    background: none;
+    font-size: 15px;
+    border-radius: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.center{
+    text-align: center;
+}
+
+#Movies{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#Movies .box{
+    /* border: 2px solid green; */
+    padding: 30px;
+    margin: 4px 6px;
+    /* justify-content: center; */
+    /* width: 300px; */
+}
+
+#Movies .box img{
+    display: block;
+    /* width: 320px; */
+    margin: auto;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#shows{
+    margin: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+
+#shows .box1{
+    padding: 55px;
+    margin: 18px 6px;
+    /* border: 2px solid green; */
+    width: 2750px;
+    color: white;
+    background-color: rgb(36, 18, 102);
+    height: 400px;
+
+}
+
+#shows .box2{
+    padding: 30px;
+    margin: 40px 0px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 42px;
+
+}
+
+
+#shows .box1 img{
+    display: flex;
+    margin: auto;
+    height: 265px;
+    padding: 70px;
+}
+
+#added{
+    margin: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#added .box4{
+    /* border: 2px solid red; */
+    /* margin: 4px 6px; */
+    padding: 55px;
+    margin: 0px 6px;
+    /* border: 2px solid green; */
+    width: 2750px;
+    color: white;
+    background-color: yellow;
+    height: 400px;
+
+}
+
+#added .box4 img{
+    display: flex;
+    padding: 78px;
+    margin: auto;
+    height: 250px;
+}
+
+
+#added .box3{
+    /* border: 2px solid green; */
+    margin: 0px 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 45px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../Img/contact-us-g7df4b5c37_1920.jpg")no-repeat center center/cover;
+    /* background-color: black; */
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box form{
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
